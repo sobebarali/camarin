@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "dev": "deno task dev:api & deno task dev:vite",
+    "dev:api": "deno --allow-env --allow-net api/main.ts",
+    "dev:vite": "deno -A npm:vite"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "express": "npm:express"
+  }
+}
